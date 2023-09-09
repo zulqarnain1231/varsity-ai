@@ -3,6 +3,7 @@ import ComponentWrapper from "../Shared/Wrappers/ComponentWrapper";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Button from "../Shared/Buttons/Button";
 
 const HeroSection = () => {
   return (
@@ -22,13 +23,12 @@ const HeroSection = () => {
             simplifying the process of digesting complex academic literature,
             making research workflow more efficient and collaborative.{" "}
           </p>
-          <Link
-            href={"https://tally.so/r/nP14xb"}
-            className="flex items-center justify-center gap-2 text-white text-base font-semibold bg-gradient-to-r from-brand-main to-brand-secondary rounded-[24px]  py-[10px] px-[15px] shadow-main"
-          >
-            Join Waitlist
-            <AiOutlineArrowRight className="text-white text-[20px]" />
-          </Link>
+          <Button
+            route="https://tally.so/r/nP14xb"
+            text="Join Waitlist"
+            shadow="shadow-main"
+            icon
+          />
         </aside>
         <aside className="w-full h-[490px] relative">
           <Image

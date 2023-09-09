@@ -3,6 +3,7 @@ import Link from "next/link";
 import { features } from "process";
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Button from "../Buttons/Button";
 const Navigation = () => {
   const menu = [
     { name: "Features", route: "features" },
@@ -32,13 +33,7 @@ const Navigation = () => {
           </Link>
         ))}
       </div>
-      <Link
-        href={"https://tally.so/r/nP14xb"}
-        className="flex items-center justify-center gap-2 text-white text-base font-semibold bg-gradient-to-r from-brand-main to-brand-secondary rounded-[24px]  py-[10px] px-[15px]"
-      >
-        Join Waitlist
-        <AiOutlineArrowRight className="text-white text-[20px]" />
-      </Link>
+      <Button route="https://tally.so/r/nP14xb" text=" Join Waitlist" icon />
     </nav>
   );
 };
