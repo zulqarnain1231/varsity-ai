@@ -4,6 +4,7 @@ import Footer from "../Shared/Navigations/Footer";
 import HeroSection from "./HeroSection";
 import Universities from "./Universities";
 import GetInsights from "./GetInsights";
+import Reasearch from "./Reasearch";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <HeroSection />
       <Universities />
       <GetInsights />
+      <Reasearch />
       <Footer />
     </div>
   );
