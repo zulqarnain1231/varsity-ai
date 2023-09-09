@@ -2,7 +2,28 @@ import React from "react";
 import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
 import Image from "next/image";
 import * as Icons from "../../../constants/Svg/Icons";
+import ServiceCard from "./ServiceCard";
 const Services = () => {
+  const services = [
+    {
+      title: "For all domains",
+      details:
+        "VarsityAI is your trusted research companion, enhancing studies in any domain.",
+      icon: <Icons.Domains ClassName="h-[40px] w-[40px] flex-shrink-0" />,
+    },
+    {
+      title: "Quick answers",
+      details:
+        "We provide precise and quick answers to your queries, eliminating the guessing game.",
+      icon: <Icons.QuickAnswer ClassName="h-[40px] w-[40px] flex-shrink-0" />,
+    },
+    {
+      title: "Time savings",
+      details:
+        "Say goodbye to hours of manual searches. Stay ahead of the curve and accelerate your research.",
+      icon: <Icons.TimeSaving ClassName="h-[40px] w-[40px] flex-shrink-0" />,
+    },
+  ];
   return (
     <ComponentWrapper
       id="services"
@@ -18,19 +39,15 @@ const Services = () => {
             journey, our AI research assistant is here to guide you.
           </p>
         </div>
-        <div className="w-full grid grid-cols-3 gap-10">
-          <div className="w-full flex flex-col items-start justify-start gap-4 rounded-[17px] p-6 relative gradient-border">
-            <div className="w-full flex items-center justify-start gap-2">
-              <Icons.Domains ClassName="h-[40px] w-[40px]" />
-              <h3 className="text-[22px] leading-7 text-white font-bold">
-                For all domains
-              </h3>
-            </div>
-            <p className="text-white/70 text-lg font-normal">
-              VarsityAI is your trusted research companion, enhancing studies in
-              any domain.
-            </p>
-          </div>
+        <div className="w-full grid md:grid-cols-3 lg:gap-10 gap-6">
+          {services.map((item: any, index: number) => (
+            <ServiceCard
+              key={index}
+              title={item.title}
+              detail={item.details}
+              icon={item.icon}
+            />
+          ))}
         </div>
       </div>
     </ComponentWrapper>
