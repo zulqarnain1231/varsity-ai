@@ -12,7 +12,7 @@ const Navigation = () => {
     },
   ];
   return (
-    <nav className="w-full h-[80px] flex items-center justify-between px-5 shadow-lg">
+    <nav className="w-full h-[80px] flex items-center justify-between px-5 shadow-md">
       <Link href={"/"} className="h-[50px] w-[130px] relative">
         <Image
           className="w-full h-full object-cover"

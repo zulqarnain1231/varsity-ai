@@ -22,7 +22,9 @@ const config: Config = {
           main: "#A7A7A7",
         },
       },
-
+      boxShadow: {
+        main: "rgba(255, 143, 15, 0.5) 0px 10px 20px 0px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
