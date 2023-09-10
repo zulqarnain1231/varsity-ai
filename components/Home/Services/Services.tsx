@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
 import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
 import Image from "next/image";
 import * as Icons from "../../../constants/Svg/Icons";
 import ServiceCard from "./ServiceCard";
+import { Fade, Slide } from "react-awesome-reveal";
+
 const Services = () => {
   const services = [
     {
@@ -30,15 +33,18 @@ const Services = () => {
       style="lg:py-16 py-10 min-h-screen bg-black-main"
     >
       <div className="w-full h-full flex flex-col items-center justify-start gap-10">
-        <div className="xl:w-[50%] lg:w-[70%] w-full mx-auto flex flex-col items-center justify-start gap-6">
-          <h2 className="text-5xl text-center text-white font-bold">
-            Manage your research stress free.
-          </h2>
-          <p className="text-white/70 text-lg text-center font-medium">
-            Whether you're a seasoned researcher or just beginning your academic
-            journey, our AI research assistant is here to guide you.
-          </p>
-        </div>
+        <Fade className="w-full" triggerOnce>
+          <div className="xl:w-[50%] lg:w-[70%] w-full mx-auto flex flex-col items-center justify-start gap-6">
+            <h2 className="text-5xl text-center text-white font-bold">
+              Manage your research stress free.
+            </h2>
+            <p className="text-white/70 text-lg text-center font-medium">
+              Whether you're a seasoned researcher or just beginning your
+              academic journey, our AI research assistant is here to guide you.
+            </p>
+          </div>
+        </Fade>
+
         <div className="w-full grid md:grid-cols-3 lg:gap-10 gap-6">
           {services.map((item: any, index: number) => (
             <ServiceCard
