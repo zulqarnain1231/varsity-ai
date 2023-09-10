@@ -9,7 +9,7 @@ const Pricing = () => {
   return (
     <ComponentWrapper id="pricing" style="lg:py-16 py-10">
       <div className="w-full h-full flex flex-col items-center justify-start gap-10">
-        <Fade className="w-full" triggerOnce>
+        <Fade className="w-full flex items-center justify-center" triggerOnce>
           <div className="lg:w-[60%] w-full flex flex-col items-center justify-start gap-5">
             <h3 className="text-black-main text-center text-5xl font-bold">
               Simple Pricing

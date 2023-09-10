@@ -13,7 +13,7 @@ const HeroSection = () => {
       style="w-full min-h-[calc(100vh-80px)] flex items-center py-10 lg:py-0"
     >
       <div className="w-full h-full grid lg:grid-cols-2 lg:gap-0 gap-8 place-items-center">
-        <Fade triggerOnce className="w-full">
+        <Fade triggerOnce className="w-full flex items-center justify-center">
           <aside className="sm:w-[70%] w-full flex flex-col items-start justify-start gap-4">
             <h1 className="text-5xl text-black-main font-bold">
               Your AI Academic Research Assistant
