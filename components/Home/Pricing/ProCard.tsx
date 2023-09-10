@@ -37,6 +37,7 @@ const ProCard = () => {
         ))}
       </div>
       <Button
+        route="https://tally.so/r/nP14xb"
         text="Join Waitlist"
         styles="bg-gradient-to-r from-brand-main to-brand-secondary text-white cursor-pointer text-brand-tartary w-full h-[50px] after:absolute after:h-full after:rounded-[17px] after:w-0 after:left-0 after:top-0 after:z-10 after:bg-white/30  hover:after:w-full hover:after:duration-300"
         shadow="shadow-main"

@@ -34,6 +34,7 @@ const FreeCard = () => {
       </div>
       <Button
         text="Join Waitlist"
+        route="https://tally.so/r/nP14xb"
         styles="bg-white text-brand-tartary w-full h-[50px] hover:bg-white/60 hover:duration-300"
         shadow="shadow-lg"
       />

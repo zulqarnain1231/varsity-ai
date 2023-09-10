@@ -17,7 +17,7 @@ const Pricing = () => {
             focus on your analysis instead of research.
           </p>
         </div>
-        <div className="w-full grid lg:grid-cols-2 place-items-center lg:gap-6 gap-10">
+        <div className="w-full grid lg:grid-cols-2 place-items-center lg:gap-0 gap-10">
           <FreeCard />
           <ProCard />
         </div>

@@ -6,11 +6,11 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const GetInsights = () => {
   return (
     <ComponentWrapper
-      id="hero"
+      id=""
       style="w-full h-full flex items-center py-10 lg:py-16"
     >
-      <div className="w-full h-full grid lg:grid-cols-2 place-items-center">
-        <aside className="w-full h-[330px] relative">
+      <div className="w-full h-full grid lg:grid-cols-2 lg:gap-0 gap-8 place-items-center">
+        <aside className="lg:w-full md:w-[70%] w-full h-[330px] relative">
           <Image
             className="w-full h-full object-cover"
             src={"/Assets/GetInsights.webp"}
@@ -18,7 +18,7 @@ const GetInsights = () => {
             fill
           />
         </aside>
-        <aside className="w-[70%] h-full flex flex-col items-start justify-start gap-4">
+        <aside className="md:w-[70%] w-full h-full flex flex-col items-start justify-start gap-4">
           <h1 className="text-3xl text-black-main font-bold">Get Insights</h1>
           <p className="text-lg text-black-main/70 font-normal">
             VarsityAI presents you with well-researched insights, references,

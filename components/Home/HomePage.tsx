@@ -14,8 +14,11 @@ const HomePage = () => {
       <Navigation />
       <HeroSection />
       <Universities />
-      <GetInsights />
-      <Reasearch />
+      <section id="features" className="w-full">
+        <GetInsights />
+        <Reasearch />
+      </section>
+
       <Services />
       <Pricing />
       <Footer />
