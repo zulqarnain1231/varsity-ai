@@ -6,6 +6,7 @@ import Universities from "./Universities";
 import GetInsights from "./GetInsights";
 import Reasearch from "./Reasearch";
 import Services from "./Services/Services";
+import Pricing from "./Pricing/Pricing";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <GetInsights />
       <Reasearch />
       <Services />
+      <Pricing />
       <Footer />
     </div>
   );
