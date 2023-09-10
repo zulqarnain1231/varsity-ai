@@ -33,7 +33,11 @@ const HeroSection = () => {
             />
           </aside>
         </Fade>
-        <Slide direction="up" triggerOnce className="w-full">
+        <Slide
+          direction="up"
+          triggerOnce
+          className="w-full flex items-center justify-center"
+        >
           <aside className="lg:w-full sm:w-[70%] w-full h-[490px] relative">
             <Image
               className="w-full h-full object-cover"
