@@ -11,7 +11,7 @@ const FreeCard = () => {
     "Regular Updates",
   ];
   return (
-    <Slide className="w-full" triggerOnce direction="up">
+    <Slide className="w-full flex items-center justify-center" triggerOnce direction="up">
       <div className="md:w-[80%] w-full flex flex-col items-start justify-start gap-10 py-8 px-12 bg-gradient-to-br from-brand-main to-brand-secondary rounded-[30px]">
         <div className="w-full flex flex-col items-start justify-start gap-4">
           <h3 className="text-white text-2xl font-bold">Free </h3>

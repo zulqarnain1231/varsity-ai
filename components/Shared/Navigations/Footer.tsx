@@ -14,7 +14,7 @@ const Footer = () => {
       </p>
       <HiOutlineMail
         onClick={openGmail}
-        className="text-[24px] text-brand-tartary"
+        className="text-[24px] text-brand-tartary cursor-pointer"
       />
     </footer>
   );

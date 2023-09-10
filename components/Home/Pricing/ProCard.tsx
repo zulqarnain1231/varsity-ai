@@ -12,7 +12,7 @@ const ProCard = () => {
     "Early Access to Updates",
   ];
   return (
-    <Slide triggerOnce className="w-full" direction="up">
+    <Slide triggerOnce className="w-full flex items-center justify-center" direction="up">
       <div className="md:w-[80%] w-full flex flex-col items-start justify-start gap-10 py-10 px-12 relative rounded-[30px]  pro-card shadow-yellow">
         <div className="w-full flex flex-col items-start justify-start gap-4">
           <h3 className="text-black-main/70 text-2xl font-bold">Pro </h3>
