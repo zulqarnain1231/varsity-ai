@@ -66,7 +66,19 @@ const Navigation = () => {
         }}
       >
         <section className="w-full h-full px-4 py-5">
-          <div className="w-full flex items-center justify-end">
+          <div className="w-full flex items-center justify-between">
+            <Link
+              onClick={toggleDrawer}
+              href={"/"}
+              className="h-[50px] w-[130px] relative"
+            >
+              <Image
+                className="w-full h-full object-cover"
+                src={"/Assets/Logo.webp"}
+                alt=""
+                fill
+              />
+            </Link>
             <MdCancel
               onClick={toggleDrawer}
               className="text-brand-tartary text-2xl"
@@ -75,6 +87,7 @@ const Navigation = () => {
           <div className="w-full h-full flex flex-col items-center justify-center gap-6">
             {menu.map((item: any, index: number) => (
               <Link
+                onClick={toggleDrawer}
                 key={index}
                 href={item.route}
                 className="text-black-secondary text-base font-medium hover:text-brand-tartary"
@@ -82,6 +95,12 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <Button
+              event={toggleDrawer}
+              route="https://tally.so/r/nP14xb"
+              text=" Join Waitlist"
+              icon
+            />
           </div>
         </section>
       </Drawer>

@@ -8,6 +8,7 @@ interface Props {
   route?: string;
   icon?: boolean;
   shadow?: string;
+  event?: () => void;
 }
 
 const Button: React.FC<Props> = ({
@@ -16,9 +17,11 @@ const Button: React.FC<Props> = ({
   route = "/",
   shadow = "",
   icon = false,
+  event = () => {},
 }: Props) => {
   return (
     <Link
+      onClick={event}
       href={route}
       className={`flex items-center justify-center gap-2  text-base font-semibold  rounded-[24px]  py-[10px] px-[15px] ${styles} ${shadow} relative`}
     >
