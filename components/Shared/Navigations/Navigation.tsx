@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Button from "../Buttons/Button";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { MdCancel } from "react-icons/md";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 
@@ -13,7 +14,6 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleDrawer = () => {
     setIsOpen((prevvalue) => !prevvalue);
-    console.log("clicked");
   };
   const menu = [
     { name: "Features", route: "features" },
@@ -65,7 +65,25 @@ const Navigation = () => {
           width: "100%",
         }}
       >
-        <section className="w-full h-full px-4 py-5">asdsad</section>
+        <section className="w-full h-full px-4 py-5">
+          <div className="w-full flex items-center justify-end">
+            <MdCancel
+              onClick={toggleDrawer}
+              className="text-brand-tartary text-2xl"
+            />
+          </div>
+          <div className="w-full h-full flex flex-col items-center justify-center gap-6">
+            {menu.map((item: any, index: number) => (
+              <Link
+                key={index}
+                href={item.route}
+                className="text-black-secondary text-base font-medium hover:text-brand-tartary"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </section>
       </Drawer>
     </>
   );
