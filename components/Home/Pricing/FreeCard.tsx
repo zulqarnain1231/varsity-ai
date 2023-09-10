@@ -34,7 +34,7 @@ const FreeCard = () => {
       </div>
       <Button
         text="Join Waitlist"
-        styles="bg-white text-brand-tartary w-full h-[50px]"
+        styles="bg-white text-brand-tartary w-full h-[50px] hover:bg-white/60 hover:duration-300"
         shadow="shadow-lg"
       />
     </div>
