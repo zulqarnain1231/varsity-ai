@@ -9,7 +9,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { MdCancel } from "react-icons/md";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-
+import { Link as Scrolling } from "react-scroll";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleDrawer = () => {
@@ -36,13 +36,18 @@ const Navigation = () => {
         </Link>
         <div className="md:flex hidden items-center justify-center gap-4">
           {menu.map((item: any, index: number) => (
-            <Link
+            <Scrolling
               key={index}
-              href={item.route}
-              className="text-black-secondary text-base font-medium hover:text-brand-tartary"
+              activeClass="active"
+              to={item.route}
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              duration={1000}
+              className="text-black-secondary text-base font-medium cursor-pointer hover:text-brand-tartary"
             >
               {item.name}
-            </Link>
+            </Scrolling>
           ))}
         </div>
         <div className="md:flex hidden">
@@ -86,14 +91,19 @@ const Navigation = () => {
           </div>
           <div className="w-full h-full flex flex-col items-center justify-center gap-6">
             {menu.map((item: any, index: number) => (
-              <Link
-                onClick={toggleDrawer}
+              <Scrolling
                 key={index}
-                href={item.route}
-                className="text-black-secondary text-base font-medium hover:text-brand-tartary"
+                activeClass="active"
+                to={item.route}
+                onClick={toggleDrawer}
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                duration={1000}
+                className="text-black-secondary text-base font-medium cursor-pointer hover:text-brand-tartary"
               >
                 {item.name}
-              </Link>
+              </Scrolling>
             ))}
             <Button
               event={toggleDrawer}
